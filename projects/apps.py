@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class AwwardappConfig(AppConfig):
+class projectsConfig(AppConfig):
     name = 'projects'
