@@ -28,7 +28,7 @@ def register(request):
             profile.user=user
             profile.save()
 
-            messages.success(request, f'Successfully created Account!.You can now login as {username}!')
+            # messages.success(request, f'Successfully created Account!.You can now login as {username}!')
         return redirect('login')
     else:
         form= RegistrationForm()
@@ -37,7 +37,7 @@ def register(request):
         'form':form,
         'profForm': prof
     }
-    return render(request, 'users/register.html', params)
+    return render(request, 'register.html', params)
 
 def searchprofile(request):
     if 'searchUser' in request.GET and request.GET['searchUser']:
@@ -53,7 +53,7 @@ def searchprofile(request):
         message = "You haven't searched for any profile"
     return render(request, 'search.html', {'message': message})
 
-@login_required(login_url='accounts/login')   
+@login_required(login_url='login')   
 def addProject(request):
     current_user = request.user
     user_profile = Profile.objects.get(user = current_user)

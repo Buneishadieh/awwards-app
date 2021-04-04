@@ -45,14 +45,9 @@ class Projects(models.Model):
 RATE_CHOICES = [
 (1,'1- Trash'),
 (2,'2- Horrible'),
-(3,'3- Terrible'),
-(4,'4- Bad'),
-(5,'5- Ok'),
-(6,'6- Watchable'),
-(7,'7- Good'),
-(8,'8- Very Good'),
-(9,'9- perfect'),
-(10,'10- Master Piece'),
+(3,'3- Good'),
+(4,'4- Very Good'),
+(5,'5- perfect'),
 ]
 
 class Review(models.Model):
