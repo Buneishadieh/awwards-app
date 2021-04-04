@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import Profile,Projects,Revieww
+from .models import Profile,Projects,Review
 from .serializer import ProfileSerializer,ProjectSerializer
 
 # Create your views here.
@@ -28,7 +28,7 @@ def register(request):
             profile.user=user
             profile.save()
 
-            # messages.success(request, f'Successfully created Account!.You can now login as {username}!')
+            messages.success(request, f'Successfully created Account!.You can now login as {username}!')
         return redirect('login')
     else:
         form= RegistrationForm()
@@ -53,7 +53,7 @@ def searchprofile(request):
         message = "You haven't searched for any profile"
     return render(request, 'search.html', {'message': message})
 
-@login_required(login_url='login')   
+@login_required(login_url='accounts/login')   
 def addProject(request):
     current_user = request.user
     user_profile = Profile.objects.get(user = current_user)

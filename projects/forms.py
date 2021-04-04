@@ -42,6 +42,6 @@ class RateForm(forms.ModelForm):
     # rate = forms.ChoiceField(choices=RATE_CHOICES,widget=forms.Select(),required=True)
 
     class Meta:
-        model = Revieww
+        model = Review
         fields = ['text','design','usability','content']
 

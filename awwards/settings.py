@@ -39,17 +39,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'projects',
+    'cloudinary_storage',
+    'cloudinary',
+    'star_ratings',
+    'rest_framework',
+    'bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'projects',
-    'cloudinary',
-    'star_ratings',
-    'rest_framework',
-    'bootstrap4',
+
 ]
 
 MIDDLEWARE = [
@@ -135,3 +137,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+CLOUDINARY_URL=cloudinary://148812415861723:4dkAVOK4Wtm51301rMBAxuL0vXI@buneishadieh-cloud
