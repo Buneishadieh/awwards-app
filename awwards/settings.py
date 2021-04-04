@@ -138,8 +138,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-CLOUDINARY_STORAGE = {
+Cloudinary.vonfig(
     'CLOUD_NAME': 'buneishadieh-cloud',
     'API_KEY': '148812415861723',
     'API_SECRET': '4dkAVOK4Wtm51301rMBAxuL0vXI'
-}
+)
