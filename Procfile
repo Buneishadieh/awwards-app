@@ -1,1 +1,1 @@
-web: gunicorn awwards.wsgi 
+web : gunicorn awwards.wsgi -b 0.0.0.0:$PORT
