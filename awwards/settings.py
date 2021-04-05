@@ -33,7 +33,7 @@ SECRET_KEY = '6ygpfr4v-k4xzu2k+gzj0&8r3n)geunzu9egr7(@v(mm_%m9ao'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['appawwards.herokuapp.com','.localhost','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -97,7 +97,7 @@ DATABASES = {
         'USER':'bunnei',
         'PASSWORD':'123456',
         'HOST':'127.0.0.1', 
-        'PORT':'5432',
+        'PORT':'',
     }
 }
 
