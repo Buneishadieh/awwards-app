@@ -23,13 +23,14 @@ As a user of the web application you will be able to:
 * virtual environment
 * pip
 ## Testing the Application
-`python manage.py test insta`
+`python manage.py test awwards
         
 ## Built With
 
-* [Python3.6](https://docs.python.org/3/)
-* Django 3.1
+* [Python3.8.8](https://docs.python.org/3/)
+* Django 3.7.1
 * Postgresql 
+* restful framework
 * Boostrap
 * HTML
 * CSS
