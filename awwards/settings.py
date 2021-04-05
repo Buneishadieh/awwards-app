@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from pathlib import Path
+
 
 import cloudinary
 import cloudinary.uploader
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 ]
+ACCOUNT_ACTIVATION_DAYS = 7
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -95,8 +96,8 @@ DATABASES = {
         'NAME': 'awwards',
         'USER':'bunnei',
         'PASSWORD':'123456',
-        'HOST':'localhost', 
-        'PORT':'',
+        'HOST':'127.0.0.1', 
+        'PORT':'5432',
     }
 }
 
